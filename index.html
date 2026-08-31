@@ -1,5 +1,22 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IRONFORGE — Fitness</title>
 <style>
+/* Smoothing and small transitions to restore polish */
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  transition: color .18s ease, background-color .18s ease, transform .18s ease;
+}
+.hero-art, .card, .btn {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090a0b;color:#f4f4f2;font-family:Arial,sans-serif}a{text-decoration:none;color:inherit}
 nav{height:74px;position:fixed;top:0;left:0;right:0;z-index:10;padding:0 7%;display:flex;justify-content:space-between;align-items:center;background:#090a0bdd;border-bottom:1px solid #292b2d;backdrop-filter:blur(6px)}
 .logo{font-weight:700;letter-spacing:1px}
