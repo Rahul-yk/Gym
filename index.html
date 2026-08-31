@@ -1,22 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IRONFORGE — Fitness</title>
 <style>
-/* Smoothing and small transitions to restore polish */
-html, body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-* {
-  transition: color .18s ease, background-color .18s ease, transform .18s ease;
-}
-.hero-art, .card, .btn {
-  will-change: transform, opacity;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-}
-@media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; animation: none !important; }
-}
-
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090a0b;color:#f4f4f2;font-family:Arial,sans-serif}a{text-decoration:none;color:inherit}
 nav{height:74px;position:fixed;top:0;left:0;right:0;z-index:10;padding:0 7%;display:flex;justify-content:space-between;align-items:center;background:#090a0bdd;border-bottom:1px solid #292b2d;backdrop-filter:blur(6px)}
 .logo{font-weight:700;letter-spacing:1px}
@@ -24,16 +7,14 @@ nav{height:74px;position:fixed;top:0;left:0;right:0;z-index:10;padding:0 7%;disp
 .links{display:flex;gap:22px}
 .links a{font-size:14px;padding:8px 6px;color:#bfc0bf}
 
-.hero{min-height:100vh;padding:145px 7% 75px;display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center;background:radial-gradient(circle at 80% 25%,#40331c,#090a0b 43%)}.kicker{font-size:14px;color:#f1e6c8;margin-bottom:12px}h1{font-size:64px;line-height:1.02;margin:0}p{color:#b9b9b7}
-.hero-art{height:560px;border:1px solid #49433a;background:linear-gradient(145deg,#29231a,#0d0e0e);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.hero-art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 30%,rgba(255,255,255,0.02),transparent 20%)}
-section{padding:105px 7%}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.head h2{font-size:48px;margin:0}.head p{max-width:480px;color:#898c89}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(180deg,#0f1011,#0b0b0b);border:1px solid #232324;padding:28px}.num{opacity:0.08;font-size:48px;font-weight:700}
-.light{background:#efeee9;color:#101112}.light .head p{color:#6e716e}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.plan{background:#fff;border:1px solid #d9d7d0;padding:30px}.plan .price{font-size:28px;margin:12px 0}.plan.featured{border:2px solid #eab308}.btn{display:inline-block;margin-top:14px;padding:10px 14px;border-radius:6px;background:transparent;border:1px solid #333;color:inherit}.btn.primary{background:#eab308;border-color:#eab308;color:#0b0b0b}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #2c2e30;border-bottom:1px solid #2c2e30}.stat{padding:28px 20px;border-right:1px solid #2c2e30}.stat b{display:block;font-size:18px}
-.gallery{display:grid;grid-template-columns:1.3fr .85fr .85fr;grid-template-rows:210px 210px;gap:15px}.gallery div{border:1px solid #333638;background:#252729}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-art{height:390px;border:1px solid #373a3c;background:linear-gradient(145deg,#292b2d,#0e1011);display:flex;align-items:center;justify-content:center;font-size:32px}
-footer{padding:28px 7%;display:flex;justify-content:space-between;border-top:1px solid #151616;color:#6d6e6d}
-@media(max-width:850px){.links{display:none}.hero,.about{grid-template-columns:1fr}.cards,.plans{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.hero-art{height:390px}.head{flex-direction:column;align-items:start}h1{font-size:42px}.kicker{margin-bottom:8px}section{padding:70px 5%}}
+.hero{min-height:100vh;padding:145px 7% 75px;display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center;background:radial-gradient(circle at 80% 25%,#40331c,#090a0b 43%)}.kicker{fo[...]
+.hero-art{height:560px;border:1px solid #49433a;background:linear-gradient(145deg,#29231a,#0d0e0e);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.hero-art[...]
+section{padding:105px 7%}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.head h2{font-size:48px;margin:0}.head p{max-width:480px;color:#898c89}.cards{d[...]
+.light{background:#efeee9;color:#101112}.light .head p{color:#6e716e}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.plan{background:#fff;border:1px solid #d9d7d0;padding:30px}.pl[...]
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #2c2e30;border-bottom:1px solid #2c2e30}.stat{padding:28px 20px;border-right:1px solid #2c2e30}.stat:last-child{border:0[...]
+.gallery{display:grid;grid-template-columns:1.3fr .85fr .85fr;grid-template-rows:210px 210px;gap:15px}.gallery div{border:1px solid #333638;background:#252729}.gallery div:nth-child(1){grid-row:sp[...]
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-art{height:390px;border:1px solid #373a3c;background:linear-gradient(145deg,#292b2d,#0e1011);display:flex;align[...]
+@media(max-width:850px){.links{display:none}.hero,.about{grid-template-columns:1fr}.cards,.plans{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.hero-art{height:390px}.head{display[...]
 </style></head><body>
 <nav><div class="logo">IRON<span>FORGE</span></div><div class="links"><a href="#training">TRAINING</a><a href="#plans">PLANS</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a></div></nav>
 <header class="hero"><div><div class="kicker">Strength • Fitness • Performance</div><h1>Build strength.<br>Build yourself.</h1><p>A premium training space for people ready to train harder, move better, and commit to consistent growth.</p></div><div class="hero-art">HUMAN FORM ILLUSTRATION</div></header>
